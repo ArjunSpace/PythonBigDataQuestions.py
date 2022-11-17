@@ -100,7 +100,7 @@ o/p : norueNi
 
 Q30. Resverse the string given in the above question.
 string = "Big Data iNeuron"
-norueNi ataD giB
+
 print(string[::-1])
 
 o/p: norueNi ataD giB
@@ -116,6 +116,7 @@ Q33. How can you print the below string?
 ```
 'iNeuron's Big Data Course'
 ```
+print("iNeuron's Big Data Course")
 
 Q34. What is a list in Python?
 
@@ -127,8 +128,17 @@ Q37. Write a code to access the word "iNeuron" from the given list.
 ```
 lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
 ``` 
+print(lst[4][2])
+
+o/p: iNeuron
 
 Q38. Take a list as an input from the user and find the length of the list.
+
+def len_list():
+  lst = list(input("enter the list: "))
+  print(len(lst))
+
+len_list()
 
 Q39. Add the word "Big" in the 3rd index of the given list.
 ```
