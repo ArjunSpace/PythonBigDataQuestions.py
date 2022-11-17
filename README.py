@@ -232,9 +232,32 @@ Q75. How can you loop over a dictionary?
 ### Coding problems
 Q76. Write a Python program to find the factorial of a given number.
 
+def factorial(n):
+
+    if n == 0 or n == 1:
+        return 1
+
+    result = 1
+    for num in range(1, n+1):
+        result = result * num
+    
+    return result
+    
+
 Q77. Write a Python program to calculate the simple interest. Formula to calculate simple interest is SI = (P*R*T)/100
 
+def simple_intrest():
+  p = int(input('Enter the principle amount '))
+  t = int(input('Enter the time duration in years '))
+  r = int(input('Enter Annual rate of intrst '))
+  SI = (p*t*r)/100
+  return SI
+
+simple_intrest()
+
 Q78. Write a Python program to calculate the compound interest. Formula of compound interest is A = P(1+ R/100)^t.
+
+
 
 Q79. Write a Python program to check if a number is prime or not.
 
