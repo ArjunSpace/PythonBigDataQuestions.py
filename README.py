@@ -279,8 +279,32 @@ compound_intrest(principle = 1000, time = 2, rate = 10)
 
 Q79. Write a Python program to check if a number is prime or not.
 
+def is_prime():
+  n = int(input('Enter the number '))
+  if n > 1:
+    for i in range(2,n):  
+      if n % i == 0:       # for checking factors of n
+        print(n, 'is not a prime number')
+        break     #if condition satisfies come out of loop
+                  # as 1 multiple is enough
+    else:
+        print(n, 'is a prime number')
 
+is_prime()
 Q80. Write a Python program to check Armstrong Number.
+
+def is_armstring():
+  n = input('Enter the number ')
+  sum = 0
+  for i in n:
+    r = int(i)
+    sum += r**3
+  if sum == int(n):
+    print(n, 'is a arm string number')
+  else:
+    print(n, 'is not a arm string number')
+is_armstring()  
+
 
 Q81. Write a Python program to find the n-th Fibonacci Number.
 
