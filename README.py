@@ -145,6 +145,13 @@ Q39. Add the word "Big" in the 3rd index of the given list.
 lst = ["Welcome", "to", "Data", "course"]
 ```
 
+lst = ["Welcome", "to", "Data", "course"]
+lst.insert(3,'Big')
+print(lst)
+print(lst.index('Big')) #to verify the index
+
+o/p: ['Welcome', 'to', 'Data', 'Big', 'course']
+      3
 Q40. What is a tuple? How is it different from list?
 
 Q41. How can you create a tuple in Python?
