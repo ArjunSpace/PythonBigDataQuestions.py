@@ -255,6 +255,14 @@ def simple_intrest():
 
 simple_intrest()
 
+ or
+  
+  def simple_intrest(p,t,r):
+  SI = (p*t*r)/100
+  return SI
+
+simple_intrest(1000,2,12)
+
 Q78. Write a Python program to calculate the compound interest. Formula of compound interest is A = P(1+ R/100)^t.
 
 
