@@ -84,15 +84,31 @@ string = "Big Data iNeuron"
 desired_output = "iNeuron"
 ```
 
+string = "Big Data iNeuron"
+print(string[9:16])
+
 Q29. Write a code to get the desired output of the following
 ```
 string = "Big Data iNeuron"
 desired_output = "norueNi"
 ```
 
+string = "Big Data iNeuron"
+print(string[16:8:-1])
+
+o/p : norueNi
+
 Q30. Resverse the string given in the above question.
+string = "Big Data iNeuron"
+norueNi ataD giB
+print(string[::-1])
+
+o/p: norueNi ataD giB
 
 Q31. How can you delete entire string at once?
+string = "Big Data iNeuron"
+
+
 
 Q32. What is escape sequence?
 
