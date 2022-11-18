@@ -112,17 +112,47 @@ string = "Big Data iNeuron"
 
 Q32. What is escape sequence?
 
+An escape character is a backslash \ followed by the character you want to insert.
+
+Code    	Result	
+\'	      Single Quote	
+\\	      Backslash	
+\n	      New Line	
+\r	      Carriage Return	
+\t	      Tab	
+\b	      Backspace	
+\f	      Form Feed	
+\ooo	    Octal value	
+\xhh	    Hex value
 Q33. How can you print the below string?
 ```
 'iNeuron's Big Data Course'
 ```
 print("iNeuron's Big Data Course")
 
+   or
+  
+print(' iNeuron\'s Big Data Course')
+
+
 Q34. What is a list in Python?
+The list is a sequence data type which is used to store the collection of data.
+Lists in Python can be created by just placing the sequence inside the square brackets[].
+A single list may contain DataTypes like Integers, Strings, as well as Objects. 
+Lists are mutable, and hence, they can be altered even after their creation.
+
 
 Q35. How can you create a list in Python?
 
+Lists in Python can be created by just placing the sequence inside the square brackets[].
+
+
 Q36. How can we access the elements in a list?
+
+In order to access the list items refer to the index number. 
+Use the index operator [ ] to access an item in a list. 
+The index must be an integer. Nested lists are accessed using nested indexing. 
+
 
 Q37. Write a code to access the word "iNeuron" from the given list.
 ```
@@ -193,7 +223,7 @@ Q58. What will the output of the following?
 var = {}
 print(type(var))
 ```
-
+<class 'dict'>  
 Q59. How can we add an element in a dictionary?
 
 Q60. Create a dictionary and access all the values in that dictionary.
@@ -333,6 +363,7 @@ Q92. Write a Python program to convert a list of tuples into dictionary.
 Input : [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]
 Output : {'Sachin': 10, 'MSD': 7, 'Kohli': 18, 'Rohit': 45}
 ```
+
 
 Q93. Write a Python program to create a list of tuples from given list having number and its cube in each tuple.
 ```
