@@ -338,9 +338,62 @@ is_armstring()
 
 Q81. Write a Python program to find the n-th Fibonacci Number.
 
+def fibonacci(n):
+    a = 0
+    b = 1
+    if n < 0:
+        print("Incorrect input")
+    elif n == 0:
+        return a
+    elif n == 1:
+        return b
+    else:
+        for i in range(2, n):
+            c = a + b
+            a = b
+            b = c
+        return b
+
+print(fibonacci(8))
+
 Q82. Write a Python program to interchange the first and last element in a list.
 
+def interchange():
+  lst1 = list(input("enter the list : "))
+  print("original list : ",lst1)
+  last_element = lst1[0]
+  lst1[0] = lst1[-1]
+  lst1.pop()
+  lst1.append(last_element)
+  
+  print("list after exchanging elements : ",lst1)
+
+interchange()
+
+o/p:
+enter the list : 12345
+original list :  ['1', '2', '3', '4', '5']
+list after exchanging elements :  ['5', '2', '3', '4', '1']
+
+           or 
+           
+ list = list(input("enter the list : "))
+list[0], list[-1] = list[-1], list[0]
+print(list)
+
+o/p:
+enter the list : 12345
+['5', '2', '3', '4', '1']
+
 Q83. Write a Python program to swap two elements in a list.
+
+def swap_pos(lst1,pos1,pos2):
+  
+  lst1[pos1], lst1[pos2] = lst1[pos2], lst1[pos1]
+  return lst1
+
+lst1 = [1,2,3,4,5,6,7]
+swap_pos(lst1,1,4)
 
 Q84. Write a Python program to find N largest element from a list.
 
