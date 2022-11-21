@@ -446,14 +446,82 @@ yes!!, it is a polyndrome
 
 Q87. Write a Python program to remove i'th element from a string.
 
+def remove_item(str1,i):
+  before_index = str1[:i]
+  after_index = str1[i+1:]
+  final_string = before_index + after_index
+  return final_string
+str1 = 'arjun'
+remove_item(str1,3)
+
+o/p:
+   arjn
+
 Q88. Write a Python program to check if a substring is present in a given string.
+def sub_string():
+  str = input("enter the input :")
+  sub_str = input("enter the input :")
+  if sub_str in str:
+    print('yes!!, it is a substring') 
+  else:
+    print('No!!, it is not a substring try another')
+
+sub_string()
+
+o/p:
+   enter the input :python is fun and joy
+enter the input : joy
+yes!!, it is a substring
+
+enter the input :python is fun and cool
+enter the input :joy
+No!!, it is not a substring try another
 
 Q89. Write a Python program to find words which are greater than given length k.
+def words_of_length(str,k):
+  lst = str.split()
+  for i in lst:
+    if len(i) > k:
+      print(i)
+      
+    
+str = "python is very fun as well as cool"
+words_of_length(str,3)
 
+o/p:
+   python
+   very
+   well
+   cool
 Q90. Write a Python program to extract unquire dictionary values.
+def extract_values(dict):
+  lst = []
+  for k,v in dict.items():
+    #print(v)
+    lst.append(v)
+  #print(lst)
+  unique = set(lst)
+  print("unique dictionary values are", unique)
 
+
+dict = { 'a' : 1, 'b' : 2, 'c' : 1}
+extract_values(dict)
+
+o/p: 
+   unique dictionary values are {1, 2}
 Q91. Write a Python program to merge two dictionary.
 
+def merge_dict(dict_1,dict_2):
+  dict_1.update(dict_2)
+  return dict_1
+
+dict_1 = {1: 'a', 2: 'b'}
+dict_2 = {2: 'c', 4: 'd'}
+
+merge_dict(dict_1,dict_2)
+
+o/p:
+   {1: 'a', 2: 'c', 4: 'd'}
 Q92. Write a Python program to convert a list of tuples into dictionary.
 ```
 Input : [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]
