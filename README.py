@@ -396,10 +396,53 @@ lst1 = [1,2,3,4,5,6,7]
 swap_pos(lst1,1,4)
 
 Q84. Write a Python program to find N largest element from a list.
+ef Nth_max(n):
+  list1 = list(input('enter the list : '))
+  print('original list is :',list1)
+  list1.sort()
+  print('sorted list : ', list1)
+  print(list1[-n])
+
+
+Nth_max(4)
+
+o/p:
+enter the list : 123456
+original list is : ['1', '2', '3', '4', '5', '6']
+sorted list :  ['1', '2', '3', '4', '5', '6']
+3
 
 Q85. Write a Python program to find cumulative sum of a list.
 
+
+def cum_list(list):
+  #list must contain only numerics
+  sum = 0
+  for i in list:
+    sum += int(i)
+    
+  return sum
+
+list = ['1','2','3']
+cum_list(list)
+  
 Q86. Write a Python program to check if a string is palindrome or not.
+def is_polyndrome():
+  string = str(input("enter the string :"))
+  n = len(string)
+  print(n)
+  for i in range(0,int((n-1)/2)):
+    if string[i] != string[(n-1)-i]:
+      return ("No!! it is not a polyndrome")
+  else:
+    return ("yes!!, it is a polyndrome")
+
+is_polyndrome()
+
+o/p:
+enter the string :RACECAR
+7
+yes!!, it is a polyndrome
 
 Q87. Write a Python program to remove i'th element from a string.
 
