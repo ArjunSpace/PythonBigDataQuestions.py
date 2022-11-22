@@ -527,26 +527,60 @@ Q92. Write a Python program to convert a list of tuples into dictionary.
 Input : [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]
 Output : {'Sachin': 10, 'MSD': 7, 'Kohli': 18, 'Rohit': 45}
 ```
+def dict1(list):
+  print(dict(list))
 
+
+list = [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]
+dict1(list)
+o/p:
+{'Sachin': 10, 'MSD': 7, 'Kohli': 18, 'Rohit': 45}
 
 Q93. Write a Python program to create a list of tuples from given list having number and its cube in each tuple.
 ```
 Input: list = [9, 5, 6]
 Output: [(9, 729), (5, 125), (6, 216)]
 ```
+def convertion_list(list):
+  list1 = []
+  for i in list:
+    k = (i,i**3)
+    list1.append(k)
+  return list1
+
+list = [9, 5, 6]
+convertion_list(list)
+
 
 Q94. Write a Python program to get all combinations of 2 tuples.
 ```
 Input : test_tuple1 = (7, 2), test_tuple2 = (7, 8)
 Output : [(7, 7), (7, 8), (2, 7), (2, 8), (7, 7), (7, 2), (8, 7), (8, 2)]
 ```
+def combination(tup1,tup2):
+  list1 = [(i,j) for i in tup1 for j in tup2]
+  list1 += [(j,i) for j in tup2 for i in tup1]
+  return list1
+
+tup1 = (7,2)
+tup2 = (7,8)
+combination(tup1,tup2)
+
+o/p:
+[(7, 7), (7, 8), (2, 7), (2, 8), (7, 7), (7, 2), (8, 7), (8, 2)]
 
 Q95. Write a Python program to sort a list of tuples by second item.
 ```
 Input : [('for', 24), ('Geeks', 8), ('Geeks', 30)] 
 Output : [('Geeks', 8), ('for', 24), ('Geeks', 30)]
 ```
+def sort_tuple(list):
+  list.sort(key = lambda list: list[1])
+  return list
 
+
+list = [('for', 24), ('Geeks', 8), ('Geeks', 30)]
+sort_tuple(list)
 Q96. Write a python program to print below pattern.
 ```
 * 
@@ -555,6 +589,21 @@ Q96. Write a python program to print below pattern.
 * * * * 
 * * * * * 
 ```
+def shape(len):
+  for i in range (len):
+    for j in range(i+1):
+      print("*", end = " ") #space included
+    print()
+
+len = 5
+shape(len)
+
+o/p:
+* 
+* * 
+* * * 
+* * * * 
+* * * * *
 Q97. Write a python program to print below pattern.
 ```
     *
