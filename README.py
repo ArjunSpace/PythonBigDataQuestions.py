@@ -613,6 +613,23 @@ Q97. Write a python program to print below pattern.
 *****
 ```
 
+def shape(n):
+  for i in range(n):
+    for j in range(i,n):
+      print(' ', end = ' ')
+  
+    for j in range(i+1):
+      print('*', end = ' ') #space between stars included
+    print()   
+
+shape(5)
+
+o/p:
+          * 
+        * * 
+      * * * 
+    * * * * 
+  * * * * * 
 Q98. Write a python program to print below pattern.
 ```
     * 
@@ -621,7 +638,23 @@ Q98. Write a python program to print below pattern.
  * * * * 
 * * * * * 
 ```
+def shape(n):
+  for i in range(n):
+    for j in range(i,n):
+      print(' ', end = ' ')
+    for j in range(i):
+      print("*", end = " ")
+    for j in range(i+1):
+      print('*', end = " ")
+    print()
+shape(5)
 
+o/p:
+          * 
+        * * * 
+      * * * * * 
+    * * * * * * * 
+  * * * * * * * * * 
 Q99. Write a python program to print below pattern.
 ```
 1 
@@ -630,6 +663,19 @@ Q99. Write a python program to print below pattern.
 1 2 3 4 
 1 2 3 4 5
 ```
+def shape_num(n):
+  for i in range(n):
+    for j in range(i+1):
+      print(j+1, end = ' ')
+    print()
+
+shape_num(5)
+o/p:
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
 
 Q100. Write a python program to print below pattern.
 ```
@@ -638,4 +684,23 @@ B B
 C C C 
 D D D D 
 E E E E E 
-```
+
+def shape_alphabet(n):
+  p = 65 #ASSCI value for A
+  for i in range(n):
+    for j in range(i+1):
+      print(chr(p), end = ' ')    #chr converts asscci value to character
+    p +=1
+    print()
+
+shape_alphabet(5)
+o/p:
+A 
+B B 
+C C C 
+D D D D 
+E E E E E
+
+
+
+
