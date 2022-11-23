@@ -382,38 +382,106 @@ operations, such as insertion and deletion.	   Tuple data type is appropriate fo
 are more likely to occur	.
 
 Q41. How can you create a tuple in Python?
+A tuple in Python can be created by enclosing all the comma-separated elements inside the parenthesis ()
 
 Q42. Create a tuple and try to add your name in the tuple. Are you able to do it? Support your answer with reason.
+tuple = ()
+tuple.append("arjun")
+print(tuple)
+
+	it is not possible to add any element into the tuple, as tuple is a immutable object
 
 Q43. Can two tuple be appended. If yes, write a code for it. If not, why?
 
+	No, appending two tuple is not possible, As tuple was immutable object
+
 Q44. Take a tuple as an input and print the count of elements in it.
+
+input = (1,2)
+#print(type(input))
+print(len(input))
+
 
 Q45. What are sets in Python?
 
+Sets are used to store multiple items in a single variable.
+A set is a collection which is unordered, unchangeable*, and unindexed.
+
 Q46. How can you create a set?
+	Set can be created by using function set().
+Ex: set1 = set() or set2 = {1,2,3}
 
 Q47. Create a set and add "iNeuron" in your set.
+string1 = "iNeuron"
+set1 = set()
+set1.add(string1)
+print("set1 = ",set1)
+o/p:
+set1 =  {'iNeuron'}
+
 
 Q48. Try to add multiple values using add() function.
 
+list1 = list(range(10))
+set1 = set()
+for i in list1:
+  set1.add(i)
+print(set1)
+o/p:
+{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+
 Q49. How is update() different from add()?
+Element can be updated to another value by update() function.
+Element can be added after the last element by add() function
 
 Q50. What is clear() in sets?
 
+	clear() method removes all elements in a set.
 Q51. What is frozen set?
+Python frozenset() Method creates an immutable Set object from an iterable. 
+It is a built-in Python function. 
+
+As it is a set object therefore we cannot have duplicate values in the frozenset.
 
 Q52. How is frozen set different from set?
+  Frozen set is just an immutable version of a Python set object. 
+While elements of a set can be modified at any time, 
+elements of the frozen set remain the same after creation. 
+Due to this, frozen sets can be used as keys in Dictionary or as elements of another set.
 
 Q53. What is union() in sets? Explain via code.
+set_a = {1,2,3,4,5,6}
+set_b = {3,6,8,9,10}
+print(set_a | set_b)
+
+o/p: {1, 2, 3, 4, 5, 6, 8, 9, 10}
+union() function is an opearation between the sets. 
+union opearation adds the unique values into a set
 
 Q54. What is intersection() in sets? Explain via code.
+set_a = {1,2,3,4,5,6}
+set_b = {3,6,8,9,10}
+print(set_a & set_b)
+o/p: {3, 6}
+intersection() function returns the values which are common in both sets
 
-Q55. What is dictionary ibn Python?
+Q55. What is dictionary in Python?
+  Dictionaries are used to store data values in key:value pairs.
+A dictionary is a collection which is ordered, changeable and do not allow duplicates.
 
 Q56. How is dictionary different from all other data structures.
 
+ The dictionary Data Structure in Python is an unordered collection of items.
+While other Data Structures use only one value as the element, 
+the dictionary is a slightly more compound data structure.
+It makes use of two elements i.e. a pair of elements, namely, a key and a value.
+
 Q57. How can we delare a dictionary in Python?
+ In Python, a dictionary can be created by placing a sequence of elements
+within curly {} braces, separated by ‘comma’. Dictionary holds pairs of values, 
+one being the Key and the other corresponding pair element being its Key:value. 
+Values in a dictionary can be of any data type and can be duplicated, 
+whereas keys can’t be repeated and must be immutable. 
 
 Q58. What will the output of the following?
 ```
@@ -422,16 +490,68 @@ print(type(var))
 ```
 <class 'dict'>  
 Q59. How can we add an element in a dictionary?
+dict2 = {}
+dict2['name'] = 'arjun'
+dict2['age'] = 22
+dict2['skills'] = ['Python', 'SQL']
+print(dict2)
+
+#dict2['name'] = 'arjun', it will add key value pair 
+name: arjun into existing dictionary
 
 Q60. Create a dictionary and access all the values in that dictionary.
+dict2 = {}
+dict2['name'] = 'arjun'
+dict2['age'] = 22
+dict2['skills'] = ['Python', 'SQL']
+dict2['states_visited'] = ('UP', 'Goa')
+dict2[45] = 'Random Key'
+print(dict2)
+for k,v in dict2.items():
+  print("values are : ",v)
+  
+ o/p:
+ {'name': 'arjun', 'age': 22, 'skills': ['Python', 'SQL'], 'states_visited': ('UP', 'Goa'), 45: 'Random Key'}
+values are :  arjun
+values are :  22
+values are :  ['Python', 'SQL']
+values are :  ('UP', 'Goa')
+values are :  Random Key
 
 Q61. Create a nested dictionary and access all the element in the inner dictionary.
+dict2 = {}
+dict2['name'] = 'arjun'
+dict2['age'] = 22
+dict2['skills'] = ['Python', 'SQL']
+dict2['states_visited'] = ('UP', 'Goa')
+dict2[45] = 'Random Key'
+dict2['other_details'] = {'color' : 'Black', 'nationality' : 'Indian'}
+
+print(dict2['other_details']['color'])
+
+o/p: Black
 
 Q62. What is the use of get() function?
 
+The get() method returns the value of the item with the specified key.
+dict2.get("skills")
+o/p: ['Python', 'SQL']
 Q63. What is the use of items() function?
 
+The items() method returns a view object. The view object contains 
+the key-value pairs of the dictionary, as tuples in a list.
+The view object will reflect any changes done to the dictionary
+
 Q64. What is the use of pop() function?
+The pop() method removes the item at the given index from the list and returns the removed item.
+
+list1 = list(range(10))
+print("original list = ", list1)
+list1.pop(9)
+print("final list = ", list1)
+o/p:
+original list =  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+final list =  [0, 1, 2, 3, 4, 5, 6, 7, 8]
 
 Q65. What is the use of popitems() function?
 
