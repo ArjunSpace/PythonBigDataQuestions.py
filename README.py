@@ -554,28 +554,75 @@ original list =  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 final list =  [0, 1, 2, 3, 4, 5, 6, 7, 8]
 
 Q65. What is the use of popitems() function?
-
+The popitem() method removes the item that was last inserted into the dictionary. 
+In versions before 3.7, the popitem() method removes a random item.
+Ex:
+	dict2.popitem()
+        print(dict2)
+o/p:
+	{'name': 'arjun',
+ 'age': 22,
+ 'skills': ['Python', 'SQL'],
+ 'states_visited': ('UP', 'Goa'),
+ 45: 'Random Key'}
+	
 Q66. What is the use of keys() function?
+The keys() method in Python Dictionary, returns a view object that displays
+a list of all the keys in the dictionary in order of insertion using Python.
 
-Q67. What is the use of values() function?
+print(dict2.keys())
+o/p:
+dict_keys(['name', 'age', 'skills', 'states_visited', 45])
 
+Q67. What is the use of values() function? 
+values() is an inbuilt method in Python programming language that returns a view object.
+The view object contains the values of the dictionary, as a list.
+
+print(dict2.values())
+o/p:
+	dict_values(['arjun', 22, ['Python', 'SQL'], ('UP', 'Goa'), 'Random Key'])
+	
 Q68. What are loops in Python?
+Looping means repeating something over and over until a particular condition is satisfied.
+loops used in python are for loop and while loop
 
 Q69. How many type of loop are there in Python?
+3 types of loops are there in python namely for loop, while loop and nested loop
 
 Q70. What is the difference between for and while loops?
+for loop:
+	A for loop is a control flow statement that executes code for a predefined number of iterations. 
+The keyword used in this control flow statement is “for”. 
+When the number of iterations is already known, the for loop is used.
+while loop:
+	A loop that runs a single statement or a set of statements for a given true condition.
+This loop is represented by the keyword "while."When the number of iterations is unknown, 
+a "while" loop is used. The statement is repeated until the boolean value is false.
 
 Q71. What is the use of continue statement?
+  The continue keyword is used to end the current iteration in a for loop or in a while loop,
+and continues to the next iteration.
 
 Q72. What is the use of break statement?
+  break statement in Python is used to bring the control out of the loop when some external 
+condition is triggered. break statement is put inside the loop body 
 
 Q73. What is the use of pass statement?
+pass statement can be used in for loop when user doesn’t know what to code inside the loop
 
 Q74. What is the use of range() function?
+The Python range() function returns a sequence of numbers, in a given range. 
+Syntax: range(start, stop, step)
 
 Q75. How can you loop over a dictionary?
-
-
+looping over a dictionary can be done by using for loop
+ex:
+    dict = {'a' : 1, 'b' : 2}
+for k,v in dict.items():
+	print('keys :',k)
+o/p:
+keys : a
+keys : b
 ### Coding problems
 Q76. Write a Python program to find the factorial of a given number.
 
