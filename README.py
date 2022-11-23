@@ -71,7 +71,7 @@ We cannot use a keyword as a variable name, function name, or any other identifi
 
 Q12. What is indentation? What's the use of indentaion in Python?
 
-		Indentation refers to the spaces at the beginning of a code line.
+	Indentation refers to the spaces at the beginning of a code line.
      Where in other programming languages the indentation in code is for readability only,  
      the indentation in Python is very important.
 
@@ -83,9 +83,9 @@ Q13. How can we throw some output in Python?
 
 Q14. What are operators in Python?
 
-Python Operators in general are used to perform operations on values and variables.
-These are standard symbols used for the purpose of logical and arithmetic operations
-Arthematic operators:
+	Python Operators in general are used to perform operations on values and variables.
+     These are standard symbols used for the purpose of logical and arithmetic operations
+ Arthematic operators:
  Arithmetic operators are used to performing mathematical operations like addition, subtraction, multiplication, and division.
 
 	
@@ -164,10 +164,10 @@ True and False and True >>> False
 
 Q20. What are conditional statements in Python?
 
-	There comes situations in real life when we need to do some specific task and based on some specific conditions and,
-	we decide what should we do next. Similarly there comes a situation in programming where a specific task is to be 
-	performed if a specific condition is True. In such cases, conditional statements can be used. 
-	The following are the conditional statements provided by Python. 
+          There comes situations in real life when we need to do some specific task and based on some specific conditions and,
+      we decide what should we do next. Similarly there comes a situation in programming where a specific task is to be 
+      performed if a specific condition is True. In such cases, conditional statements can be used. 
+The following are the conditional statements provided by Python. 
 
 if
 if..else
@@ -253,7 +253,8 @@ Strings in python are surrounded by either single quotation marks, or double quo
 string in python can be declared by using str() function
 
 Q27. How can we access the string using its index?
-Individual characters in a string can be accessed by 
+
+	Individual characters in a string can be accessed by 
 specifying the string name followed by a number in square brackets ( [] ).
 String indexing in Python is zero-based: the first character in the string
 has  index 0 , the next has index 1 , and so on.
@@ -286,8 +287,8 @@ print(string[::-1])
 o/p: norueNi ataD giB
 
 Q31. How can you delete entire string at once?
-string = "Big Data iNeuron"
 
+string = "Big Data iNeuron"
 string = string.replace("Big Data iNeuron", '')
 
 Q32. What is escape sequence?
@@ -316,10 +317,10 @@ print(' iNeuron\'s Big Data Course')
 
 
 Q34. What is a list in Python?
-The list is a sequence data type which is used to store the collection of data.
-Lists in Python can be created by just placing the sequence inside the square brackets[].
-A single list may contain DataTypes like Integers, Strings, as well as Objects. 
-Lists are mutable, and hence, they can be altered even after their creation.
+	The list is a sequence data type which is used to store the collection of data.
+     Lists in Python can be created by just placing the sequence inside the square brackets[].
+     A single list may contain DataTypes like Integers, Strings, as well as Objects. 
+     Lists are mutable, and hence, they can be altered even after their creation.
 
 
 Q35. How can you create a list in Python?
@@ -329,9 +330,9 @@ Lists in Python can be created by just placing the sequence inside the square br
 
 Q36. How can we access the elements in a list?
 
-In order to access the list items refer to the index number. 
-Use the index operator [ ] to access an item in a list. 
-The index must be an integer. Nested lists are accessed using nested indexing. 
+ 	In order to access the list items refer to the index number. 
+     Use the index operator [ ] to access an item in a list. 
+     The index must be an integer. Nested lists are accessed using nested indexing. 
 
 
 Q37. Write a code to access the word "iNeuron" from the given list.
@@ -362,6 +363,7 @@ print(lst.index('Big')) #to verify the index
 
 o/p: ['Welcome', 'to', 'Data', 'Big', 'course']
       3
+
 Q40. What is a tuple? How is it different from list?
   Tuples are used to store multiple items in a single variable.
 Tuple is one of 4 built-in data types in Python used to store 
@@ -382,9 +384,11 @@ operations, such as insertion and deletion.	   Tuple data type is appropriate fo
 are more likely to occur	.
 
 Q41. How can you create a tuple in Python?
-A tuple in Python can be created by enclosing all the comma-separated elements inside the parenthesis ()
+	
+	A tuple in Python can be created by enclosing all the comma-separated elements inside the parenthesis ()
 
 Q42. Create a tuple and try to add your name in the tuple. Are you able to do it? Support your answer with reason.
+
 tuple = ()
 tuple.append("arjun")
 print(tuple)
@@ -404,14 +408,16 @@ print(len(input))
 
 Q45. What are sets in Python?
 
-Sets are used to store multiple items in a single variable.
+	Sets are used to store multiple items in a single variable.
 A set is a collection which is unordered, unchangeable*, and unindexed.
 
 Q46. How can you create a set?
+	
 	Set can be created by using function set().
 Ex: set1 = set() or set2 = {1,2,3}
 
 Q47. Create a set and add "iNeuron" in your set.
+
 string1 = "iNeuron"
 set1 = set()
 set1.add(string1)
@@ -431,25 +437,30 @@ o/p:
 {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
 
 Q49. How is update() different from add()?
-Element can be updated to another value by update() function.
+
+	Element can be updated to another value by update() function.
 Element can be added after the last element by add() function
 
 Q50. What is clear() in sets?
 
 	clear() method removes all elements in a set.
+	
 Q51. What is frozen set?
-Python frozenset() Method creates an immutable Set object from an iterable. 
+
+	Python frozenset() Method creates an immutable Set object from an iterable. 
 It is a built-in Python function. 
 
 As it is a set object therefore we cannot have duplicate values in the frozenset.
 
 Q52. How is frozen set different from set?
-  Frozen set is just an immutable version of a Python set object. 
+ 
+	Frozen set is just an immutable version of a Python set object. 
 While elements of a set can be modified at any time, 
 elements of the frozen set remain the same after creation. 
 Due to this, frozen sets can be used as keys in Dictionary or as elements of another set.
 
 Q53. What is union() in sets? Explain via code.
+
 set_a = {1,2,3,4,5,6}
 set_b = {3,6,8,9,10}
 print(set_a | set_b)
@@ -459,6 +470,7 @@ union() function is an opearation between the sets.
 union opearation adds the unique values into a set
 
 Q54. What is intersection() in sets? Explain via code.
+
 set_a = {1,2,3,4,5,6}
 set_b = {3,6,8,9,10}
 print(set_a & set_b)
@@ -466,7 +478,8 @@ o/p: {3, 6}
 intersection() function returns the values which are common in both sets
 
 Q55. What is dictionary in Python?
-  Dictionaries are used to store data values in key:value pairs.
+ 
+	Dictionaries are used to store data values in key:value pairs.
 A dictionary is a collection which is ordered, changeable and do not allow duplicates.
 
 Q56. How is dictionary different from all other data structures.
@@ -477,7 +490,8 @@ the dictionary is a slightly more compound data structure.
 It makes use of two elements i.e. a pair of elements, namely, a key and a value.
 
 Q57. How can we delare a dictionary in Python?
- In Python, a dictionary can be created by placing a sequence of elements
+ 
+	In Python, a dictionary can be created by placing a sequence of elements
 within curly {} braces, separated by ‘comma’. Dictionary holds pairs of values, 
 one being the Key and the other corresponding pair element being its Key:value. 
 Values in a dictionary can be of any data type and can be duplicated, 
@@ -485,11 +499,14 @@ whereas keys can’t be repeated and must be immutable.
 
 Q58. What will the output of the following?
 ```
+
 var = {}
 print(type(var))
 ```
-<class 'dict'>  
+o/p: <class 'dict'>, it is a dictionary
+
 Q59. How can we add an element in a dictionary?
+
 dict2 = {}
 dict2['name'] = 'arjun'
 dict2['age'] = 22
@@ -500,6 +517,7 @@ print(dict2)
 name: arjun into existing dictionary
 
 Q60. Create a dictionary and access all the values in that dictionary.
+
 dict2 = {}
 dict2['name'] = 'arjun'
 dict2['age'] = 22
@@ -519,6 +537,7 @@ values are :  ('UP', 'Goa')
 values are :  Random Key
 
 Q61. Create a nested dictionary and access all the element in the inner dictionary.
+
 dict2 = {}
 dict2['name'] = 'arjun'
 dict2['age'] = 22
@@ -533,17 +552,19 @@ o/p: Black
 
 Q62. What is the use of get() function?
 
-The get() method returns the value of the item with the specified key.
+	The get() method returns the value of the item with the specified key.
+
 dict2.get("skills")
 o/p: ['Python', 'SQL']
 Q63. What is the use of items() function?
 
-The items() method returns a view object. The view object contains 
+	The items() method returns a view object. The view object contains 
 the key-value pairs of the dictionary, as tuples in a list.
 The view object will reflect any changes done to the dictionary
 
 Q64. What is the use of pop() function?
-The pop() method removes the item at the given index from the list and returns the removed item.
+
+	The pop() method removes the item at the given index from the list and returns the removed item.
 
 list1 = list(range(10))
 print("original list = ", list1)
@@ -554,7 +575,8 @@ original list =  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 final list =  [0, 1, 2, 3, 4, 5, 6, 7, 8]
 
 Q65. What is the use of popitems() function?
-The popitem() method removes the item that was last inserted into the dictionary. 
+
+	The popitem() method removes the item that was last inserted into the dictionary. 
 In versions before 3.7, the popitem() method removes a random item.
 Ex:
 	dict2.popitem()
@@ -567,7 +589,8 @@ o/p:
  45: 'Random Key'}
 	
 Q66. What is the use of keys() function?
-The keys() method in Python Dictionary, returns a view object that displays
+
+	The keys() method in Python Dictionary, returns a view object that displays
 a list of all the keys in the dictionary in order of insertion using Python.
 
 print(dict2.keys())
@@ -575,7 +598,8 @@ o/p:
 dict_keys(['name', 'age', 'skills', 'states_visited', 45])
 
 Q67. What is the use of values() function? 
-values() is an inbuilt method in Python programming language that returns a view object.
+
+	values() is an inbuilt method in Python programming language that returns a view object.
 The view object contains the values of the dictionary, as a list.
 
 print(dict2.values())
@@ -583,39 +607,50 @@ o/p:
 	dict_values(['arjun', 22, ['Python', 'SQL'], ('UP', 'Goa'), 'Random Key'])
 	
 Q68. What are loops in Python?
-Looping means repeating something over and over until a particular condition is satisfied.
+
+	Looping means repeating something over and over until a particular condition is satisfied.
 loops used in python are for loop and while loop
 
 Q69. How many type of loop are there in Python?
-3 types of loops are there in python namely for loop, while loop and nested loop
+
+	3 types of loops are there in python namely for loop, while loop and nested loop
 
 Q70. What is the difference between for and while loops?
+
 for loop:
+	
 	A for loop is a control flow statement that executes code for a predefined number of iterations. 
 The keyword used in this control flow statement is “for”. 
 When the number of iterations is already known, the for loop is used.
+
 while loop:
+	
 	A loop that runs a single statement or a set of statements for a given true condition.
 This loop is represented by the keyword "while."When the number of iterations is unknown, 
 a "while" loop is used. The statement is repeated until the boolean value is false.
 
 Q71. What is the use of continue statement?
-  The continue keyword is used to end the current iteration in a for loop or in a while loop,
+  
+	The continue keyword is used to end the current iteration in a for loop or in a while loop,
 and continues to the next iteration.
 
 Q72. What is the use of break statement?
-  break statement in Python is used to bring the control out of the loop when some external 
+  
+	break statement in Python is used to bring the control out of the loop when some external 
 condition is triggered. break statement is put inside the loop body 
 
 Q73. What is the use of pass statement?
-pass statement can be used in for loop when user doesn’t know what to code inside the loop
+
+	pass statement can be used in for loop when user doesn’t know what to code inside the loop
 
 Q74. What is the use of range() function?
-The Python range() function returns a sequence of numbers, in a given range. 
+
+	The Python range() function returns a sequence of numbers, in a given range. 
 Syntax: range(start, stop, step)
 
 Q75. How can you loop over a dictionary?
-looping over a dictionary can be done by using for loop
+
+	looping over a dictionary can be done by using for loop
 ex:
     dict = {'a' : 1, 'b' : 2}
 for k,v in dict.items():
@@ -760,7 +795,8 @@ lst1 = [1,2,3,4,5,6,7]
 swap_pos(lst1,1,4)
 
 Q84. Write a Python program to find N largest element from a list.
-ef Nth_max(n):
+
+def Nth_max(n):
   list1 = list(input('enter the list : '))
   print('original list is :',list1)
   list1.sort()
@@ -791,6 +827,7 @@ list = ['1','2','3']
 cum_list(list)
   
 Q86. Write a Python program to check if a string is palindrome or not.
+
 def is_polyndrome():
   string = str(input("enter the string :"))
   n = len(string)
@@ -822,6 +859,7 @@ o/p:
    arjn
 
 Q88. Write a Python program to check if a substring is present in a given string.
+
 def sub_string():
   str = input("enter the input :")
   sub_str = input("enter the input :")
@@ -842,6 +880,7 @@ enter the input :joy
 No!!, it is not a substring try another
 
 Q89. Write a Python program to find words which are greater than given length k.
+
 def words_of_length(str,k):
   lst = str.split()
   for i in lst:
@@ -858,6 +897,7 @@ o/p:
    well
    cool
 Q90. Write a Python program to extract unquire dictionary values.
+
 def extract_values(dict):
   lst = []
   for k,v in dict.items():
@@ -891,6 +931,7 @@ Q92. Write a Python program to convert a list of tuples into dictionary.
 Input : [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]
 Output : {'Sachin': 10, 'MSD': 7, 'Kohli': 18, 'Rohit': 45}
 ```
+
 def dict1(list):
   print(dict(list))
 
@@ -1002,6 +1043,38 @@ Q98. Write a python program to print below pattern.
  * * * * 
 * * * * * 
 ```
+
+def triangle(n):
+     
+    # number of spaces
+    k = n - 1
+    # outer loop to handle number of rows
+    for i in range(0, n):
+        # inner loop to handle number spaces
+        # values changing acc. to requirement
+        for j in range(0, k):
+            print(end=" ")     
+        # decrementing k after each loop
+        k = k - 1    
+        # inner loop to handle number of columns
+        # values changing acc. to outer loop
+        for j in range(0, i+1):       
+            # printing stars
+            print("* ", end="")     
+        # ending line after each row
+        print()
+
+triangle(5)
+
+o/p: 
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 
+
+#code for combining increasing and decreasing 
+#triangle of stars
 def shape(n):
   for i in range(n):
     for j in range(i,n):
